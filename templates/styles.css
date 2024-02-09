@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* لون خلفية الصفحة */
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    margin-bottom: 20px; /* تباعد بين الهيدر والأشكال */
+}
+
+.shapes-section {
+    display: flex;
+    justify-content: center; /* توسيع المسافة بين الأشكال */
+    margin-top: 30px;
+}
+
+.shape {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 10px; /* تباعد بين الأشكال */
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.flag-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.flag-section img {
+    width: 200px; /* زيادة حجم الصورة */
+    border: 8px solid #3498db;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flag-section img:hover {
+    transform: scale(1.05); /* تكبير الصورة عند التحويم */
+}
+
+.motto {
+    font-size: 24px;
+    font-style: italic;
+    color: #3498db;
+    margin-top: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+}

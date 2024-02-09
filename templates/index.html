@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.bos.gov.ls/styles.css">
+    <title>Pride and Solidarity website</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Pride and Solidarity Website</h1>
+  </div>
+  
+  <div class="shapes-section">
+      <div class="shape" style="background-color: #ff5733;"></div>
+      <div class="shape" style="background-color: #33ff57;"></div>
+      <div class="shape" style="background-color: #5733ff;"></div>
+      <!-- Add more shapes as needed -->
+  </div>
+  
+  <div class="flag-section">
+      <img src="https://mediaaws.almasryalyoum.com/news/medium/2014/05/06/208987_0.jpg" alt="Palestine Flag">
+      <p class="motto">We are here, we are strong, victory is ours</p>
+  </div>
+  
+  <div class="footer">
+      <p>© 2024 Pride and Solidarity Website. All rights reserved.</p>
+  </div>
+  
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('/upload-all-files', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: new URLSearchParams(),
+        })
+        .then(response => response.json())
+        .then(data => {
+          alert(data.message);
+        });
+      });
+    </script>
+  </body>
+</html>
